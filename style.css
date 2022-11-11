@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.wrap .slick1 {}
+
+.wrap .slick1 .slick-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    visibility: hidden; /* prev 글자 숨김 */
+    font-size: 0;
+}
+
+.wrap .slick1 .slick-prev:after {
+    content: "\f191";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible; /* font awesome 아이콘은 보이게 */
+    font-size: 30px; /* 아이콘 사이즈 */
+    color: aliceblue;
+    text-shadow: 0 0 6px black;
+
+}
+
+
+.wrap .slick1 .slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    font-size: 0;
+
+}
+
+.wrap .slick1 .slick-next:after{
+    content: "\f152";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    visibility: visible;
+    font-size: 30px;
+    color: aliceblue;
+    text-shadow: 0 0 6px black;
+
+}
